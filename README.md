@@ -14,6 +14,18 @@ the old name, so existing installs keep their documents.
 - **Apple frameworks only.** AVFoundation, VisionKit, Vision, Core Image, Core Graphics, PencilKit,
   SwiftData, LocalAuthentication and SwiftUI. There are no third-party dependencies.
 
+## Install
+
+Offscan is not on the App Store. Download `Offscan-unsigned.ipa` from the
+[latest release](https://github.com/bartoszpiech/offscan/releases/latest) and install it with a
+sideloading tool, which signs it with your own Apple ID:
+
+- [SideStore](https://sidestore.io) needs a computer once for setup, then refreshes apps on the phone.
+- [AltStore](https://altstore.io) and [Sideloadly](https://sideloadly.io) sign and install from a Mac or PC.
+
+With a free Apple ID the app has to be refreshed every 7 days. It needs iOS 17 or later. To build
+it yourself instead, see [Getting started](#getting-started).
+
 ## Features
 
 1. **Camera scanning** with Offscan's own camera (live edge outline, auto-capture, many pages per
