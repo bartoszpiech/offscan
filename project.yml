@@ -1,0 +1,142 @@
+# Offscan — XcodeGen project spec. Regenerate with scripts/generate-project.sh. Never edit the .xcodeproj by hand.
+#
+# Owner-specific values live here and only here:
+#   BUNDLE_ID_PREFIX  — environment variable read by XcodeGen (default below is used when unset)
+#   DEVELOPMENT_TEAM  — intentionally empty; set your Team ID in `settings.base` below or in Xcode's Signing tab.
+name: Flatly
+options:
+  bundleIdPrefix: ${BUNDLE_ID_PREFIX}
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+  defaultConfig: Debug
+  indentWidth: 4
+  tabWidth: 4
+
+# Environment-variable defaults consumed above (XcodeGen substitutes ${VAR} from the environment;
+# scripts/generate-project.sh exports BUNDLE_ID_PREFIX=com.example.flatly when unset).
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    # Keep pinned. ScanProcessor (FlatlyApp/Services/ScanProcessor.swift) must run off the main
+    # actor, and CaptureSessionPipeline relies on dispatch-queue confinement that MainActor
+    # default isolation would break at runtime. Xcode 16 ignores both settings.
+    SWIFT_APPROACHABLE_CONCURRENCY: "NO"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+  configs:
+    Debug:
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+    Release:
+      SWIFT_COMPILATION_MODE: wholemodule
+
+packages:
+  FlatlyCore:
+    path: FlatlyCore
+
+targets:
+  FlatlyApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: FlatlyApp
+        excludes:
+          - "**/*.md"
+    dependencies:
+      - package: FlatlyCore
+        product: FlatlyCore
+    settings:
+      base:
+        PRODUCT_NAME: Flatly
+        PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID_PREFIX}
+        INFOPLIST_KEY_CFBundleDisplayName: Offscan
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        GENERATE_INFOPLIST_FILE: YES
+    info:
+      path: FlatlyApp/Info.plist
+      properties:
+        CFBundleDisplayName: Offscan
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, pl]
+        LSRequiresIPhoneOS: true
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        NSCameraUsageDescription: "Offscan uses the camera to scan documents. Images never leave your device."
+        NSFaceIDUsageDescription: "Offscan uses Face ID to unlock the app."
+        NSPhotoLibraryAddUsageDescription: "Offscan adds exported pages to your photo library only when you choose to save them there."
+        UIFileSharingEnabled: false
+        LSSupportsOpeningDocumentsInPlace: false
+        ITSAppUsesNonExemptEncryption: false
+        UIRequiresFullScreen: false
+        UIUserInterfaceStyle: Automatic
+        # Home Screen quick action (long-press the icon). The title is the InfoPlist.xcstrings key.
+        UIApplicationShortcutItems:
+          - UIApplicationShortcutItemType: flatly.quickaction.scan
+            UIApplicationShortcutItemTitle: Scan Document
+            UIApplicationShortcutItemIconSymbolName: doc.viewfinder
+
+  FlatlyUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: FlatlyUITests
+    dependencies:
+      - target: FlatlyApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID_PREFIX}.uitests
+        TEST_TARGET_NAME: FlatlyApp
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  FlatlyApp:
+    build:
+      targets:
+        FlatlyApp: all
+        FlatlyUITests: [test]
+    run:
+      config: Debug
+      environmentVariables:
+        FLATLY_UI_TESTING: "0"
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - name: FlatlyUITests
+        - package: FlatlyCore/FlatlyCoreTests
+    archive:
+      config: Release
+
+  # UI tests only (smoke tests + ScreenshotTests), for scripts/ui-screenshots.sh and the CI
+  # screenshot job: building for testing skips the FlatlyCore test bundle and code coverage.
+  FlatlyUITests:
+    build:
+      targets:
+        FlatlyApp: all
+        FlatlyUITests: [test]
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - name: FlatlyUITests

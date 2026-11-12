@@ -1,0 +1,4079 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@, %lld pages": {
+      "comment": "Accessibility value of a document card: relative date, page count",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %#@pages@"
+          },
+          "substitutions": {
+            "pages": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg page"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg pages"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %#@pages@"
+          },
+          "substitutions": {
+            "pages": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "few": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg strony"
+                    }
+                  },
+                  "many": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg stron"
+                    }
+                  },
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg strona"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg strony"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%@, page %lld": {
+      "comment": "Name of one page of a multi-page file (TIFF or PDF), e.g. in the list of items that couldn't be imported: 'fax.tiff, page 2'",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, page %2$lld"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, strona %2$lld"
+          }
+        }
+      }
+    },
+    "%lld documents": {
+      "comment": "Number of documents in a folder",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld document"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld documents"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld dokumenty"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld dokumentów"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld dokument"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld dokumentu"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld of %lld pages could not be saved.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zapisać %1$lld z %2$lld stron."
+          }
+        }
+      }
+    },
+    "%lld percent from left, %lld percent from top": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld procent od lewej, %2$lld procent od góry"
+          }
+        }
+      }
+    },
+    "%lld percent from the left, %lld percent from the top, %lld percent of the page width": {
+      "comment": "Signature position for VoiceOver",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld procent od lewej, %2$lld procent od góry, %3$lld procent szerokości strony"
+          }
+        }
+      }
+    },
+    "%lld percent wide, %lld percent high": {
+      "comment": "Crop area size for VoiceOver",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Szerokość %1$lld procent, wysokość %2$lld procent"
+          }
+        }
+      }
+    },
+    "%lld Selected": {
+      "comment": "Library title in Select mode",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Selected"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznaczono: %lld"
+          }
+        }
+      }
+    },
+    "A4": {
+      "comment": "PDF page size",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A4"
+          }
+        }
+      }
+    },
+    "About": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacje"
+          }
+        }
+      }
+    },
+    "Add": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj"
+          }
+        }
+      }
+    },
+    "Add (%lld)": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj (%lld)"
+          }
+        }
+      }
+    },
+    "Add Pages": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj strony"
+          }
+        }
+      }
+    },
+    "Applied to new scans and imports. You can change it for each page later.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stosowany do nowych skanów i importów. Później możesz go zmienić dla każdej strony."
+          }
+        }
+      }
+    },
+    "Apply this filter to all pages": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastosuj ten filtr do wszystkich stron"
+          }
+        }
+      }
+    },
+    "Apply to All": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastosuj do wszystkich"
+          }
+        }
+      }
+    },
+    "Applying filter…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stosowanie filtra…"
+          }
+        }
+      }
+    },
+    "Applying filter… %lld of %lld": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stosowanie filtra… %1$lld z %2$lld"
+          }
+        }
+      }
+    },
+    "Authentication failed. Please try again.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uwierzytelnianie nie powiodło się. Spróbuj ponownie."
+          }
+        }
+      }
+    },
+    "Authentication isn’t available right now. Please try again.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uwierzytelnianie jest teraz niedostępne. Spróbuj ponownie."
+          }
+        }
+      }
+    },
+    "Balanced": {
+      "comment": "Export compression level",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrównoważona"
+          }
+        }
+      }
+    },
+    "Best Quality": {
+      "comment": "Export compression level",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najlepsza jakość"
+          }
+        }
+      }
+    },
+    "Biometrics are locked after too many attempts. Use your device passcode.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometria została zablokowana po zbyt wielu próbach. Użyj kodu urządzenia."
+          }
+        }
+      }
+    },
+    "Black": {
+      "comment": "Signature ink color",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czarny"
+          }
+        }
+      }
+    },
+    "Black & White": {
+      "comment": "Scan filter name",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czarno-białe"
+          }
+        }
+      }
+    },
+    "Blue": {
+      "comment": "Signature ink color",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niebieski"
+          }
+        }
+      }
+    },
+    "Bottom crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolny uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Bottom edge": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolna krawędź"
+          }
+        }
+      }
+    },
+    "Bottom left corner": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewy dolny róg"
+          }
+        }
+      }
+    },
+    "Bottom left crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewy dolny uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Bottom right corner": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prawy dolny róg"
+          }
+        }
+      }
+    },
+    "Bottom right crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prawy dolny uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Camera Error": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Błąd aparatu"
+          }
+        }
+      }
+    },
+    "Camera Not Available": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat niedostępny"
+          }
+        }
+      }
+    },
+    "Can't Open Your Library": {
+      "comment": "Startup error screen title",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie można otworzyć biblioteki"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anuluj"
+          }
+        }
+      }
+    },
+    "Cancel Import?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anulować import?"
+          }
+        }
+      }
+    },
+    "Changes Couldn't Be Saved": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zapisać zmian"
+          }
+        }
+      }
+    },
+    "Choose Files": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz pliki"
+          }
+        }
+      }
+    },
+    "Choose images or PDFs to add as pages.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz obrazy lub pliki PDF, aby dodać je jako strony."
+          }
+        }
+      }
+    },
+    "Clear": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyczyść"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamknij"
+          }
+        }
+      }
+    },
+    "Color": {
+      "comment": "Scan filter name",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolor"
+          }
+        }
+      }
+    },
+    "Confirm it’s you to turn off the app lock.": {
+      "comment": "Reason shown in the Face ID / passcode prompt when disabling the app lock",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potwierdź swoją tożsamość, aby wyłączyć blokadę aplikacji."
+          }
+        }
+      }
+    },
+    "Confirm it’s you to turn on the app lock.": {
+      "comment": "Reason shown in the Face ID / passcode prompt when enabling the app lock",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potwierdź swoją tożsamość, aby włączyć blokadę aplikacji."
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontynuuj"
+          }
+        }
+      }
+    },
+    "Copied": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skopiowano"
+          }
+        }
+      }
+    },
+    "Copy All": {
+      "comment": "Bottom-bar button on the Recognized Text screen: copies the text of every page",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiuj wszystko"
+          }
+        }
+      }
+    },
+    "Couldn't Prepare the Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się przygotować podpisu"
+          }
+        }
+      }
+    },
+    "Create": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utwórz"
+          }
+        }
+      }
+    },
+    "Crop": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przytnij"
+          }
+        }
+      }
+    },
+    "Crop area": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obszar przycięcia"
+          }
+        }
+      }
+    },
+    "Date created": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data utworzenia"
+          }
+        }
+      }
+    },
+    "Default filter": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domyślny filtr"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń"
+          }
+        }
+      }
+    },
+    "Delete %lld documents?": {
+      "comment": "Library Select mode: title of the Delete confirmation",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld document?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld documents?"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld dokumenty?"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld dokumentów?"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld dokument?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld dokumentu?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "It will be moved to Recently Deleted, where you can restore it for 30 days.": {
+      "comment": "Delete confirmation message for one document",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trafi do folderu Ostatnio usunięte, skąd przez 30 dni możesz go przywrócić."
+          }
+        }
+      }
+    },
+    "They will be moved to Recently Deleted, where you can restore them for 30 days.": {
+      "comment": "Delete confirmation message for several documents",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trafią do folderu Ostatnio usunięte, skąd przez 30 dni możesz je przywrócić."
+          }
+        }
+      }
+    },
+    "Recently Deleted": {
+      "comment": "Title of the folder-like list of deleted documents, kept for 30 days",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatnio usunięte"
+          }
+        }
+      }
+    },
+    "Documents are erased permanently 30 days after you delete them.": {
+      "comment": "Recently Deleted: list header",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po 30 dniach dokumenty są stąd trwale usuwane."
+          }
+        }
+      }
+    },
+    "No Deleted Documents": {
+      "comment": "Recently Deleted: empty state title",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak usuniętych dokumentów"
+          }
+        }
+      }
+    },
+    "Deleted documents stay here for 30 days.": {
+      "comment": "Recently Deleted: empty state description",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunięte dokumenty są tu przechowywane przez 30 dni."
+          }
+        }
+      }
+    },
+    "%lld days left": {
+      "comment": "Recently Deleted: days until a deleted document is erased permanently",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld day left"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld days left"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zostały %lld dni"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zostało %lld dni"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Został %lld dzień"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zostało %lld dni"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Shows Restore and Delete Now.": {
+      "comment": "Accessibility hint of a row in Recently Deleted",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuje opcje Przywróć i Usuń teraz."
+          }
+        }
+      }
+    },
+    "Restore the document to the library, or delete it permanently now.": {
+      "comment": "Recently Deleted: message of the dialog shown for one document",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przywróć dokument do biblioteki albo usuń go trwale już teraz."
+          }
+        }
+      }
+    },
+    "Restore": {
+      "comment": "Recently Deleted: puts the document back into the library",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przywróć"
+          }
+        }
+      }
+    },
+    "Delete Now": {
+      "comment": "Recently Deleted: erases the document permanently",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń teraz"
+          }
+        }
+      }
+    },
+    "Restore All": {
+      "comment": "Recently Deleted: bottom bar button that restores every document",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przywróć wszystkie"
+          }
+        }
+      }
+    },
+    "Delete All": {
+      "comment": "Recently Deleted: erases every document permanently (bottom bar and confirmation button)",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń wszystkie"
+          }
+        }
+      }
+    },
+    "Delete %lld documents permanently?": {
+      "comment": "Recently Deleted: title of the Delete All confirmation",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld document permanently?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld documents permanently?"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Trwale usunąć %lld dokumenty?"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Trwale usunąć %lld dokumentów?"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Trwale usunąć %lld dokument?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Trwale usunąć %lld dokumentu?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Delete Document": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń dokument"
+          }
+        }
+      }
+    },
+    "Delete Folder": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń folder"
+          }
+        }
+      }
+    },
+    "Delete Page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń stronę"
+          }
+        }
+      }
+    },
+    "Delete %lld pages?": {
+      "comment": "Document screen: title of the confirmation for deleting selected pages",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld page?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld pages?"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld strony?"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld stron?"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld stronę?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Usunąć %lld strony?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Delete folder “%@”?": {
+      "comment": "Confirmation title; the placeholder is the folder name",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunąć folder „%@”?"
+          }
+        }
+      }
+    },
+    "Delete this document?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunąć ten dokument?"
+          }
+        }
+      }
+    },
+    "Delete this page?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunąć tę stronę?"
+          }
+        }
+      }
+    },
+    "Delete “%@”?": {
+      "comment": "Confirmation title; the placeholder is the document title",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunąć „%@”?"
+          }
+        }
+      }
+    },
+    "Deselect All": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odznacz wszystko"
+          }
+        }
+      }
+    },
+    "Discard All Pages": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odrzuć wszystkie strony"
+          }
+        }
+      }
+    },
+    "Document Deleted": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokument usunięty"
+          }
+        }
+      }
+    },
+    "Document not found": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie znaleziono dokumentu"
+          }
+        }
+      }
+    },
+    "Documents": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumenty"
+          }
+        }
+      }
+    },
+    "Documents inside will be kept.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumenty z tego folderu zostaną zachowane."
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gotowe"
+          }
+        }
+      }
+    },
+    "Drag the frame or its handles to keep only part of the page.": {
+      "comment": "Instruction line above the Crop screen's Reset button",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeciągnij ramkę lub jej uchwyty, aby zostawić tylko część strony."
+          }
+        }
+      }
+    },
+    "Drag the handles to the edges of the paper to straighten the page.": {
+      "comment": "Instruction line above the Adjust Edges screen's bottom controls",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeciągnij uchwyty do krawędzi kartki, aby wyprostować stronę."
+          }
+        }
+      }
+    },
+    "Drag to adjust the document outline, or use the actions to move it.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeciągnij, aby dopasować obrys dokumentu, lub przesuń uchwyt za pomocą czynności."
+          }
+        }
+      }
+    },
+    "Drag to move. Pinch or drag the handle to resize.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeciągnij, aby przesunąć. Zsuń lub rozsuń palce albo przeciągnij uchwyt, aby zmienić rozmiar."
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edytuj"
+          }
+        }
+      }
+    },
+    "Edit Page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edytuj stronę"
+          }
+        }
+      }
+    },
+    "editor.tool.adjustEdges": {
+      "comment": "Short caption under the perspective icon in the page editor's bottom tool bar",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust Edges"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krawędzie"
+          }
+        }
+      }
+    },
+    "Everything is processed on your device. Offscan never connects to the internet.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystko jest przetwarzane na Twoim urządzeniu. Offscan nigdy nie łączy się z internetem."
+          }
+        }
+      }
+    },
+    "Export": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksport"
+          }
+        }
+      }
+    },
+    "Export Failed": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksport nie powiódł się"
+          }
+        }
+      }
+    },
+    "Exporting %lld of %lld…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exporting %1$lld of %2$lld…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksportowanie %1$lld z %2$lld…"
+          }
+        }
+      }
+    },
+    "Exporting…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksportowanie…"
+          }
+        }
+      }
+    },
+    "Filter": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtr"
+          }
+        }
+      }
+    },
+    "Fit to Content": {
+      "comment": "PDF page size",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopasowany do treści"
+          }
+        }
+      }
+    },
+    "Offscan couldn't open them, usually because the device is almost out of storage. Free up some space (Settings > General > iPad Storage), then tap Try Again. Don't delete Offscan to make room: that would delete your documents too.": {
+      "comment": "Startup error screen on iPad: how to free space (path as in the Settings app)",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offscan nie może ich otworzyć, zwykle dlatego, że na urządzeniu kończy się miejsce. Zwolnij trochę miejsca (Ustawienia > Ogólne > Pamięć iPada) i stuknij „Spróbuj ponownie”. Nie usuwaj Offscan, żeby zwolnić miejsce – usunęłoby to także Twoje dokumenty."
+          }
+        }
+      }
+    },
+    "Offscan couldn't open them, usually because the device is almost out of storage. Free up some space (Settings > General > iPhone Storage), then tap Try Again. Don't delete Offscan to make room: that would delete your documents too.": {
+      "comment": "Startup error screen on iPhone: how to free space (path as in the Settings app)",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offscan nie może ich otworzyć, zwykle dlatego, że na urządzeniu kończy się miejsce. Zwolnij trochę miejsca (Ustawienia > Ogólne > Pamięć iPhone’a) i stuknij „Spróbuj ponownie”. Nie usuwaj Offscan, żeby zwolnić miejsce – usunęłoby to także Twoje dokumenty."
+          }
+        }
+      }
+    },
+    "Offscan locks when you leave the app. Your device passcode works as a fallback.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offscan blokuje się, gdy opuszczasz aplikację. Kod urządzenia działa jako zabezpieczenie zapasowe."
+          }
+        }
+      }
+    },
+    "Folder name": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nazwa folderu"
+          }
+        }
+      }
+    },
+    "Folder not found": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie znaleziono folderu"
+          }
+        }
+      }
+    },
+    "Folders": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foldery"
+          }
+        }
+      }
+    },
+    "Forget Saved Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapomnij zapisany podpis"
+          }
+        }
+      }
+    },
+    "Forget Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapomnij podpis"
+          }
+        }
+      }
+    },
+    "Forget the saved signature?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapomnieć zapisany podpis?"
+          }
+        }
+      }
+    },
+    "Format": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format"
+          }
+        }
+      }
+    },
+    "Found on page %lld: %@": {
+      "comment": "Accessibility: where a library search query was found in the document",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Znaleziono na stronie %1$lld: %2$@"
+          }
+        }
+      }
+    },
+    "Full Page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cała strona"
+          }
+        }
+      }
+    },
+    "Grayscale": {
+      "comment": "Scan filter name",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skala szarości"
+          }
+        }
+      }
+    },
+    "Hide Details": {
+      "comment": "Startup error screen: hides the error domain and code again",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukryj szczegóły"
+          }
+        }
+      }
+    },
+    "Import Failed": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import nie powiódł się"
+          }
+        }
+      }
+    },
+    "Import Files": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importuj pliki"
+          }
+        }
+      }
+    },
+    "Import from Files": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importuj z Plików"
+          }
+        }
+      }
+    },
+    "Import from Photos": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importuj ze Zdjęć"
+          }
+        }
+      }
+    },
+    "in folder %@": {
+      "comment": "Accessibility value suffix of a Recent card: the folder the document is in",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "w folderze %@"
+          }
+        }
+      }
+    },
+    "number %lld in the selection": {
+      "comment": "Accessibility value suffix of a selected library document: its position in the selection order, which Merge and Share follow",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "number %lld in the selection"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "numer %lld w zaznaczeniu"
+          }
+        }
+      }
+    },
+    "Ink Color": {
+      "comment": "Signature canvas: label of the row of ink colour swatches",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolor podpisu"
+          }
+        }
+      }
+    },
+    "It may have been deleted.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mógł zostać usunięty."
+          }
+        }
+      }
+    },
+    "JPG": {
+      "comment": "Export format",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JPG"
+          }
+        }
+      }
+    },
+    "Keep Editing": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontynuuj edycję"
+          }
+        }
+      }
+    },
+    "Keeps only part of the page": {
+      "comment": "VoiceOver hint of the Crop button in the page editor's tool bar",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zostawia tylko część strony"
+          }
+        }
+      }
+    },
+    "Keeps the pages processed so far.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zachowuje już przetworzone strony."
+          }
+        }
+      }
+    },
+    "Last modified": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data modyfikacji"
+          }
+        }
+      }
+    },
+    "Left crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewy uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Left edge": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewa krawędź"
+          }
+        }
+      }
+    },
+    "Letter": {
+      "comment": "PDF page size",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "US Letter"
+          }
+        }
+      }
+    },
+    "Loading…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wczytywanie…"
+          }
+        }
+      }
+    },
+    "Make Offscan full screen to use the camera": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aby używać aparatu, otwórz Offscan na pełnym ekranie"
+          }
+        }
+      }
+    },
+    "Make Larger": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powiększ"
+          }
+        }
+      }
+    },
+    "Make Smaller": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomniejsz"
+          }
+        }
+      }
+    },
+    "Merge": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połącz"
+          }
+        }
+      }
+    },
+    "Merge %lld documents?": {
+      "comment": "Library Select mode: title of the Merge confirmation",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Merge %lld document?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Merge %lld documents?"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Połączyć %lld dokumenty?"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Połączyć %lld dokumentów?"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Połączyć %lld dokument?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Połączyć %lld dokumentu?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Merge Documents": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połącz dokumenty"
+          }
+        }
+      }
+    },
+    "More": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Więcej"
+          }
+        }
+      }
+    },
+    "Move": {
+      "comment": "Library Select-mode bottom bar caption: moves the selected documents to a folder",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przenieś"
+          }
+        }
+      }
+    },
+    "Move closer": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zbliż aparat do dokumentu"
+          }
+        }
+      }
+    },
+    "Move Down": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w dół"
+          }
+        }
+      }
+    },
+    "Move Left": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w lewo"
+          }
+        }
+      }
+    },
+    "Move Right": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w prawo"
+          }
+        }
+      }
+    },
+    "Move Up": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w górę"
+          }
+        }
+      }
+    },
+    "Move down": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w dół"
+          }
+        }
+      }
+    },
+    "Move left": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w lewo"
+          }
+        }
+      }
+    },
+    "Move right": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w prawo"
+          }
+        }
+      }
+    },
+    "Move to Folder": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przenieś do folderu"
+          }
+        }
+      }
+    },
+    "Move to Folder…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przenieś do folderu…"
+          }
+        }
+      }
+    },
+    "Move up": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń w górę"
+          }
+        }
+      }
+    },
+    "Navy": {
+      "comment": "Signature ink color",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Granatowy"
+          }
+        }
+      }
+    },
+    "New Folder": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nowy folder"
+          }
+        }
+      }
+    },
+    "New Folder…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nowy folder…"
+          }
+        }
+      }
+    },
+    "Next page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Następna strona"
+          }
+        }
+      }
+    },
+    "Next time you can sign with one tap.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Następnym razem podpiszesz jednym dotknięciem."
+          }
+        }
+      }
+    },
+    "No Pages": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak stron"
+          }
+        }
+      }
+    },
+    "No Text Recognized": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie rozpoznano tekstu"
+          }
+        }
+      }
+    },
+    "No ads, no subscriptions.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez reklam, bez subskrypcji."
+          }
+        }
+      }
+    },
+    "No document detected — adjust the corners manually": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie wykryto dokumentu — dopasuj rogi ręcznie"
+          }
+        }
+      }
+    },
+    "No folder": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez folderu"
+          }
+        }
+      }
+    },
+    "No scans yet": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak skanów"
+          }
+        }
+      }
+    },
+    "No text on this page.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak tekstu na tej stronie."
+          }
+        }
+      }
+    },
+    "No text was found on these pages. Try a different filter or run text recognition again.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na tych stronach nie znaleziono tekstu. Wypróbuj inny filtr lub ponów rozpoznawanie tekstu."
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "One image per page.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeden obraz na stronę."
+          }
+        }
+      }
+    },
+    "Opening files…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwieranie plików…"
+          }
+        }
+      }
+    },
+    "Opens the camera to scan a document": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwiera aparat, aby zeskanować dokument"
+          }
+        }
+      }
+    },
+    "Opens the page editor": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwiera edytor strony"
+          }
+        }
+      }
+    },
+    "Or draw a new one:": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lub narysuj nowy:"
+          }
+        }
+      }
+    },
+    "Original": {
+      "comment": "Scan filter name",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oryginał"
+          }
+        }
+      }
+    },
+    "PDF": {
+      "comment": "Export format",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF"
+          }
+        }
+      }
+    },
+    "Page %lld": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strona %lld"
+          }
+        }
+      }
+    },
+    "Page %lld of %lld": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strona %1$lld z %2$lld"
+          }
+        }
+      }
+    },
+    "Page Size": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozmiar strony"
+          }
+        }
+      }
+    },
+    "Photo %lld": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdjęcie %lld"
+          }
+        }
+      }
+    },
+    "Place": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umieść"
+          }
+        }
+      }
+    },
+    "Place Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umieść podpis"
+          }
+        }
+      }
+    },
+    "Placing signature…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umieszczanie podpisu…"
+          }
+        }
+      }
+    },
+    "Preparing page %lld of %lld…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przygotowywanie strony %1$lld z %2$lld…"
+          }
+        }
+      }
+    },
+    "Preparing…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przygotowywanie…"
+          }
+        }
+      }
+    },
+    "Previous page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poprzednia strona"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prywatność"
+          }
+        }
+      }
+    },
+    "Processing page %lld of %lld…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przetwarzanie strony %1$lld z %2$lld…"
+          }
+        }
+      }
+    },
+    "Quality": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jakość"
+          }
+        }
+      }
+    },
+    "Recent": {
+      "comment": "Library section header: most recently modified documents across all folders",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatnie"
+          }
+        }
+      }
+    },
+    "Recognized Text": {
+      "comment": "Title of the screen showing a document's recognized (OCR) text",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozpoznany tekst"
+          }
+        }
+      }
+    },
+    "Recognizing text…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozpoznawanie tekstu…"
+          }
+        }
+      }
+    },
+    "Recognizing text… %lld of %lld": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozpoznawanie tekstu… %1$lld z %2$lld"
+          }
+        }
+      }
+    },
+    "Remove Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń podpis"
+          }
+        }
+      }
+    },
+    "Remove the signature?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunąć podpis?"
+          }
+        }
+      }
+    },
+    "Removes this page from the scan and shows the next one.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuwa tę stronę ze skanu i pokazuje następną."
+          }
+        }
+      }
+    },
+    "Replace Saved Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastąp zapisany podpis"
+          }
+        }
+      }
+    },
+    "Reset the crop and remove the signature?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zresetować przycięcie i usunąć podpis?"
+          }
+        }
+      }
+    },
+    "Reset the crop?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zresetować przycięcie?"
+          }
+        }
+      }
+    },
+    "Removing signature…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuwanie podpisu…"
+          }
+        }
+      }
+    },
+    "Rename": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień nazwę"
+          }
+        }
+      }
+    },
+    "Rename Document": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień nazwę dokumentu"
+          }
+        }
+      }
+    },
+    "Rename Folder": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień nazwę folderu"
+          }
+        }
+      }
+    },
+    "Reorder or Delete Pages": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień kolejność lub usuń strony"
+          }
+        }
+      }
+    },
+    "Require Face ID": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wymagaj Face ID"
+          }
+        }
+      }
+    },
+    "Require Optic ID": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wymagaj Optic ID"
+          }
+        }
+      }
+    },
+    "Require Touch ID": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wymagaj Touch ID"
+          }
+        }
+      }
+    },
+    "Require authentication": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wymagaj uwierzytelnienia"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetuj"
+          }
+        }
+      }
+    },
+    "Resize signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień rozmiar podpisu"
+          }
+        }
+      }
+    },
+    "Restores the detected corners.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przywraca wykryte rogi."
+          }
+        }
+      }
+    },
+    "%lld results across all folders": {
+      "comment": "Library search header: number of matching documents; search always covers every folder",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld result across all folders"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld results across all folders"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld wyniki ze wszystkich folderów"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld wyników ze wszystkich folderów"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld wynik ze wszystkich folderów"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld wyniku ze wszystkich folderów"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Review edges after scanning": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprawdzaj krawędzie po skanowaniu"
+          }
+        }
+      }
+    },
+    "Right crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prawy uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Right edge": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prawa krawędź"
+          }
+        }
+      }
+    },
+    "Rotate Left": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obróć w lewo"
+          }
+        }
+      }
+    },
+    "Rotate Right": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obróć w prawo"
+          }
+        }
+      }
+    },
+    "Rotating or cropping removes the signature from this page. You can sign it again afterwards.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obrócenie lub przycięcie usunie podpis z tej strony. Możesz ją potem ponownie podpisać."
+          }
+        }
+      }
+    },
+    "Run Text Recognition Again": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponów rozpoznawanie tekstu"
+          }
+        }
+      }
+    },
+    "Save as My Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisz jako mój podpis"
+          }
+        }
+      }
+    },
+    "Save to Files": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisz w Plikach"
+          }
+        }
+      }
+    },
+    "Saved to Files": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisano w Plikach"
+          }
+        }
+      }
+    },
+    "Saving pages…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisywanie stron…"
+          }
+        }
+      }
+    },
+    "Scan": {
+      "comment": "Prefix of the default document title",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skan"
+          }
+        }
+      }
+    },
+    "Scan Failed": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skanowanie nie powiodło się"
+          }
+        }
+      }
+    },
+    "Scan a document or import a photo to get started.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeskanuj dokument lub zaimportuj zdjęcie, aby zacząć."
+          }
+        }
+      }
+    },
+    "Scan or import a document here, or move one in from the library.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeskanuj lub zaimportuj tu dokument albo przenieś go z biblioteki."
+          }
+        }
+      }
+    },
+    "Scan or import pages to add them to this document.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeskanuj lub zaimportuj strony, aby dodać je do tego dokumentu."
+          }
+        }
+      }
+    },
+    "Scan with Camera": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skanuj aparatem"
+          }
+        }
+      }
+    },
+    "Scanned Pages": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeskanowane strony"
+          }
+        }
+      }
+    },
+    "Scans are processed and stored on your device. No account, no ads, no tracking.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skany są przetwarzane i przechowywane na Twoim urządzeniu. Bez konta, reklam i śledzenia."
+          }
+        }
+      }
+    },
+    "Search titles and text": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Szukaj w tytułach i tekście"
+          }
+        }
+      }
+    },
+    "Searchable PDF: recognized text can be selected and searched.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF z warstwą tekstu: rozpoznany tekst można zaznaczać i przeszukiwać."
+          }
+        }
+      }
+    },
+    "Security": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bezpieczeństwo"
+          }
+        }
+      }
+    },
+    "Select": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznacz"
+          }
+        }
+      }
+    },
+    "Select All": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznacz wszystko"
+          }
+        }
+      }
+    },
+    "Select Documents": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznacz dokumenty"
+          }
+        }
+      }
+    },
+    "Select Photos": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz zdjęcia"
+          }
+        }
+      }
+    },
+    "Set a device passcode in the Settings app to use the app lock.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ustaw kod urządzenia w aplikacji Ustawienia, aby korzystać z blokady aplikacji."
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ustawienia"
+          }
+        }
+      }
+    },
+    "Share": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnij"
+          }
+        }
+      }
+    },
+    "Shares a PDF with your last export settings.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnia PDF z ostatnimi ustawieniami eksportu."
+          }
+        }
+      }
+    },
+    "Show Details": {
+      "comment": "Startup error screen: reveals the error domain and code",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokaż szczegóły"
+          }
+        }
+      }
+    },
+    "Shows the pages taken so far.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuje strony zeskanowane do tej pory."
+          }
+        }
+      }
+    },
+    "Sign": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podpisz"
+          }
+        }
+      }
+    },
+    "Sign in the box with your finger or Apple Pencil.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podpisz się w polu palcem lub rysikiem Apple Pencil."
+          }
+        }
+      }
+    },
+    "Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podpis"
+          }
+        }
+      }
+    },
+    "Signature drawing area": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pole do rysowania podpisu"
+          }
+        }
+      }
+    },
+    "Signatures already placed on pages are not affected.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie wpłynie to na podpisy już umieszczone na stronach."
+          }
+        }
+      }
+    },
+    "Smallest File": {
+      "comment": "Export compression level",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najmniejszy plik"
+          }
+        }
+      }
+    },
+    "Some Items Couldn't Be Imported": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zaimportować niektórych elementów"
+          }
+        }
+      }
+    },
+    "Something went wrong": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coś poszło nie tak"
+          }
+        }
+      }
+    },
+    "Sort": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sortuj"
+          }
+        }
+      }
+    },
+    "Sort by": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sortuj według"
+          }
+        }
+      }
+    },
+    "Stop": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zatrzymaj"
+          }
+        }
+      }
+    },
+    "Swipe up or down to move this edge outward or inward.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przesuń palcem w górę lub w dół, aby przesunąć tę krawędź na zewnątrz lub do środka."
+          }
+        }
+      }
+    },
+    "Text": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekst"
+          }
+        }
+      }
+    },
+    "Text copied": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skopiowano tekst"
+          }
+        }
+      }
+    },
+    "The camera is being used by another app": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat jest używany przez inną aplikację"
+          }
+        }
+      }
+    },
+    "The camera is paused": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat jest wstrzymany"
+          }
+        }
+      }
+    },
+    "The camera is paused while your device cools down": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat jest wstrzymany, dopóki urządzenie nie ostygnie"
+          }
+        }
+      }
+    },
+    "The camera stopped working": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat przestał działać"
+          }
+        }
+      }
+    },
+    "The corners must form a convex shape.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rogi muszą tworzyć kształt wypukły."
+          }
+        }
+      }
+    },
+    "The device may be almost out of storage. Free up some space, then tap Try Again.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na urządzeniu może kończyć się miejsce. Zwolnij trochę miejsca i stuknij „Spróbuj ponownie”."
+          }
+        }
+      }
+    },
+    "The document will be moved into the new folder.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokument zostanie przeniesiony do nowego folderu."
+          }
+        }
+      }
+    },
+    "The item could not be read.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się odczytać elementu."
+          }
+        }
+      }
+    },
+    "The pages will be added to “%@” in the order you selected the documents, and the other documents will be removed.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strony zostaną dodane do „%@” w kolejności zaznaczenia, a pozostałe dokumenty zostaną usunięte."
+          }
+        }
+      }
+    },
+    "The scanned pages could not be saved.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zapisać zeskanowanych stron."
+          }
+        }
+      }
+    },
+    "The selected documents will be moved into the new folder.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznaczone dokumenty zostaną przeniesione do nowego folderu."
+          }
+        }
+      }
+    },
+    "These items couldn't be read or processed:\n%@": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się odczytać ani przetworzyć tych elementów:\n%@"
+          }
+        }
+      }
+    },
+    "This cannot be undone.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tej operacji nie można cofnąć."
+          }
+        }
+      }
+    },
+    "This device can't scan documents with the camera. You can import photos or files instead.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To urządzenie nie może skanować dokumentów aparatem. Zamiast tego możesz zaimportować zdjęcia lub pliki."
+          }
+        }
+      }
+    },
+    "This folder is empty": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ten folder jest pusty"
+          }
+        }
+      }
+    },
+    "Title": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tytuł"
+          }
+        }
+      }
+    },
+    "Top crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Górny uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Top edge": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Górna krawędź"
+          }
+        }
+      }
+    },
+    "Top left corner": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewy górny róg"
+          }
+        }
+      }
+    },
+    "Top left crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewy górny uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Top right corner": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prawy górny róg"
+          }
+        }
+      }
+    },
+    "Top right crop handle": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prawy górny uchwyt przycinania"
+          }
+        }
+      }
+    },
+    "Try Again": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spróbuj ponownie"
+          }
+        }
+      }
+    },
+    "Undo": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cofnij"
+          }
+        }
+      }
+    },
+    "Undo last photo": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cofnij ostatnie zdjęcie"
+          }
+        }
+      }
+    },
+    "Unlock": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odblokuj"
+          }
+        }
+      }
+    },
+    "Unlock with Face ID": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odblokuj za pomocą Face ID"
+          }
+        }
+      }
+    },
+    "Unlock with Optic ID": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odblokuj za pomocą Optic ID"
+          }
+        }
+      }
+    },
+    "Unlock with Touch ID": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odblokuj za pomocą Touch ID"
+          }
+        }
+      }
+    },
+    "Unlock your documents.": {
+      "comment": "Reason shown in the Face ID / passcode prompt when unlocking the app",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odblokuj swoje dokumenty."
+          }
+        }
+      }
+    },
+    "Updating page…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizowanie strony…"
+          }
+        }
+      }
+    },
+    "Use Sample Page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Użyj przykładowej strony"
+          }
+        }
+      }
+    },
+    "Use Saved Signature": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Użyj zapisanego podpisu"
+          }
+        }
+      }
+    },
+    "Uses the outlined area as the page.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Używa zaznaczonego obszaru jako strony."
+          }
+        }
+      }
+    },
+    "Uses the whole image.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Używa całego obrazu."
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wersja"
+          }
+        }
+      }
+    },
+    "When off, pages with a detected document are saved right away. You can still adjust a page's edges later.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gdy ta opcja jest wyłączona, strony z wykrytym dokumentem są zapisywane od razu. Krawędzie strony możesz poprawić później."
+          }
+        }
+      }
+    },
+    "Your documents are locked.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twoje dokumenty są zablokowane."
+          }
+        }
+      }
+    },
+    "%lld pages": {
+      "comment": "Page count of a document (document and export headers, camera's Scanned Pages button)",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld page"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld pages"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld strony"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld stron"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld strona"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld strony"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "library.scanButton": {
+      "comment": "Primary button that opens the document camera",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skanuj"
+          }
+        }
+      }
+    },
+    "Image unavailable": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obraz niedostępny"
+          }
+        }
+      }
+    },
+    "Set a device passcode to use the app lock.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ustaw kod urządzenia, aby korzystać z blokady aplikacji."
+          }
+        }
+      }
+    },
+    "Adjust Edges": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopasuj krawędzie"
+          }
+        }
+      }
+    },
+    "Adjusting edges…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopasowywanie krawędzi…"
+          }
+        }
+      }
+    },
+    "Adjusting the edges removes the signature from this page. You can sign it again afterwards.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopasowanie krawędzi usunie podpis z tej strony. Możesz ją potem ponownie podpisać."
+          }
+        }
+      }
+    },
+    "Adjusting the edges resets the crop of this page and removes its signature. You can crop and sign it again afterwards.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopasowanie krawędzi zresetuje przycięcie tej strony i usunie jej podpis. Możesz ją potem ponownie przyciąć i podpisać."
+          }
+        }
+      }
+    },
+    "Adjusting the edges resets the crop of this page. You can crop it again afterwards.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopasowanie krawędzi zresetuje przycięcie tej strony. Możesz ją potem ponownie przyciąć."
+          }
+        }
+      }
+    },
+    "Drag the corners to fit the page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeciągnij rogi, aby dopasować je do strony"
+          }
+        }
+      }
+    },
+    "Rotate": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obróć"
+          }
+        }
+      }
+    },
+    "Share PDF": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnij PDF"
+          }
+        }
+      }
+    },
+    "Export Options…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opcje eksportu…"
+          }
+        }
+      }
+    },
+    "Tap a page to adjust its edges or filter": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuknij stronę, aby dopasować krawędzie lub zmienić filtr"
+          }
+        }
+      }
+    },
+    "Dismiss": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamknij"
+          }
+        }
+      }
+    },
+    "No adjustments": {
+      "comment": "Description of the Original scan filter",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez zmian"
+          }
+        }
+      }
+    },
+    "White paper, true colors": {
+      "comment": "Description of the Color scan filter",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Białe tło, wierne kolory"
+          }
+        }
+      }
+    },
+    "White paper, shades of gray": {
+      "comment": "Description of the Grayscale scan filter",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Białe tło, odcienie szarości"
+          }
+        }
+      }
+    },
+    "Crisp text, no shadows": {
+      "comment": "Description of the Black & White scan filter",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyraźny tekst, bez cieni"
+          }
+        }
+      }
+    },
+    "Discard Scanned Pages?": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odrzucić zeskanowane strony?"
+          }
+        }
+      }
+    },
+    "The camera could not be started.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się uruchomić aparatu."
+          }
+        }
+      }
+    },
+    "The photo could not be taken.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zrobić zdjęcia."
+          }
+        }
+      }
+    },
+    "Automatic": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatycznie"
+          }
+        }
+      }
+    },
+    "On": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Włączone"
+          }
+        }
+      }
+    },
+    "Off": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyłączone"
+          }
+        }
+      }
+    },
+    "Offscan Camera": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat Offscan"
+          }
+        }
+      }
+    },
+    "Apple Document Scanner": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skaner dokumentów Apple"
+          }
+        }
+      }
+    },
+    "Camera Access Needed": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potrzebny dostęp do aparatu"
+          }
+        }
+      }
+    },
+    "Offscan needs the camera to scan documents. Allow camera access for Offscan in Settings. Photos never leave your device.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offscan potrzebuje aparatu do skanowania dokumentów. Zezwól na dostęp do aparatu dla Offscan w Ustawieniach. Zdjęcia nigdy nie opuszczają urządzenia."
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwórz Ustawienia"
+          }
+        }
+      }
+    },
+    "Keep Scanning": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skanuj dalej"
+          }
+        }
+      }
+    },
+    "Camera viewfinder": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wizjer aparatu"
+          }
+        }
+      }
+    },
+    "Document detected": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wykryto dokument"
+          }
+        }
+      }
+    },
+    "No document detected": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie wykryto dokumentu"
+          }
+        }
+      }
+    },
+    "Flash": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lampa błyskowa"
+          }
+        }
+      }
+    },
+    "Auto": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto"
+          }
+        }
+      }
+    },
+    "Auto-capture": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatyczne robienie zdjęć"
+          }
+        }
+      }
+    },
+    "Takes the photo automatically when the document is held steady.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Robi zdjęcie automatycznie, gdy dokument jest nieruchomy."
+          }
+        }
+      }
+    },
+    "Take Photo": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrób zdjęcie"
+          }
+        }
+      }
+    },
+    "Use All": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Użyj wszystkich"
+          }
+        }
+      }
+    },
+    "Uses this outline and the detected edges for every remaining page.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Używa tego obrysu, a dla pozostałych stron wykrytych krawędzi."
+          }
+        }
+      }
+    },
+    "Captured": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrobiono zdjęcie"
+          }
+        }
+      }
+    },
+    "Point the camera at a document": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skieruj aparat na dokument"
+          }
+        }
+      }
+    },
+    "Show the next page": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skieruj aparat na następną stronę"
+          }
+        }
+      }
+    },
+    "Hold steady…": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trzymaj aparat nieruchomo…"
+          }
+        }
+      }
+    },
+    "Camera": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat"
+          }
+        }
+      }
+    },
+    "The file could not be read or saved. If storage is almost full, free up some space and try again.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się odczytać ani zapisać pliku. Jeśli pamięć jest prawie pełna, zwolnij trochę miejsca i spróbuj ponownie."
+          }
+        }
+      }
+    },
+    "The image could not be read.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się odczytać obrazu."
+          }
+        }
+      }
+    },
+    "The image could not be saved.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zapisać obrazu."
+          }
+        }
+      }
+    },
+    "The page could not be processed.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się przetworzyć strony."
+          }
+        }
+      }
+    },
+    "Your documents haven't been deleted. They're still on this device.": {
+      "comment": "Startup error screen: reassurance shown first when the library can't be opened",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twoje dokumenty nie zostały usunięte. Nadal są na tym urządzeniu."
+          }
+        }
+      }
+    },
+    "Require Passcode": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wymagaj kodu urządzenia"
+          }
+        }
+      }
+    },
+    "Offscan locks when you leave the app and unlocks with your device passcode.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offscan blokuje się, gdy opuszczasz aplikację, i odblokowuje kodem urządzenia."
+          }
+        }
+      }
+    },
+    "Anyone opening the PDF will need this password. Offscan doesn't keep it and can't recover it.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do otwarcia pliku PDF potrzebne będzie to hasło. Offscan go nie przechowuje i nie może go odzyskać."
+          }
+        }
+      }
+    },
+    "Confirm Password": {
+      "comment": "PDF password screen: field to type the password again",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powtórz hasło"
+          }
+        }
+      }
+    },
+    "PDF Password": {
+      "comment": "Title of the screen that sets the exported PDF's password",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hasło PDF"
+          }
+        }
+      }
+    },
+    "Password": {
+      "comment": "Export sheet row and field: password protecting the exported PDF",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hasło"
+          }
+        }
+      }
+    },
+    "Remove Password": {
+      "comment": "PDF password screen: button that turns the PDF password off",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń hasło"
+          }
+        }
+      }
+    },
+    "Set": {
+      "comment": "PDF password screen: button that applies the password",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ustaw"
+          }
+        }
+      }
+    },
+    "The exported PDF will ask for this password.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyeksportowany PDF poprosi o to hasło."
+          }
+        }
+      }
+    },
+    "The passwords don't match.": {
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hasła nie są takie same."
+          }
+        }
+      }
+    },
+    "Use only letters without accents, digits, spaces and symbols.": {
+      "comment": "PDF password screen: the password may contain printable ASCII only",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Używaj tylko liter bez polskich znaków, cyfr, spacji i symboli."
+          }
+        }
+      }
+    },
+    "Advanced": {
+      "comment": "Settings: header of the section with the camera choice and edge review",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaawansowane"
+          }
+        }
+      }
+    },
+    "Recommended. Keeps the whole photo, so you can adjust the edges again any time.": {
+      "comment": "Settings > Advanced: subtitle of the Offscan Camera option",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zalecany. Zachowuje całe zdjęcie, więc krawędzie możesz poprawić w każdej chwili."
+          }
+        }
+      }
+    },
+    "Crops each page right away. Later you can only crop it smaller, not wider.": {
+      "comment": "Settings > Advanced: subtitle of the Apple Document Scanner option",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Od razu przycina każdą stronę. Później kadr można tylko zmniejszyć, nie poszerzyć."
+          }
+        }
+      }
+    },
+    "Finish Scanning": {
+      "comment": "Scanned Pages sheet over the camera: primary button that ends shooting (same as the camera's Done)",
+      "localizations": {
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zakończ skanowanie"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

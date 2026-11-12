@@ -1,0 +1,31 @@
+# Xcode / SwiftPM
+*.xcodeproj/
+!project.yml
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+
+# Large duplicate PNG renders of the HEIC fixtures (HEIC originals are tracked)
+TestFixtures/photos/*.png
+
+# Build artefacts
+/build/
+/tmp/
+
+# Agent worktrees
+.claude/worktrees/
+
+# Local test output (PDFs dropped at the repo root)
+/*.pdf
+
+# Real photos used as extra local fixtures (personal documents, never published)
+TestFixtures/private/

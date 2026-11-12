@@ -1,0 +1,174 @@
+# Builds an unsigned iOS IPA of Offscan on a macOS runner (which has Xcode) and runs the
+# FlatlyCore test suite. Download the "Offscan-unsigned-ipa" artifact from the run summary and
+# install it on an iPhone with Sideloadly or AltStore (they sign it with your Apple ID).
+#
+# The "screenshots" job runs only when dispatched by hand (macOS minutes are expensive): it builds
+# the app for an iPhone simulator, captures every main screen with the demo library in English
+# light, English dark and Polish light (FlatlyUITests/ScreenshotTests, scripts/ui-screenshots.sh)
+# and uploads them as the "Offscan-screenshots" artifact. Screenshots only, for any branch:
+#   gh workflow run ios-build.yml --ref <branch> -f jobs=screenshots
+name: iOS build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "Jobs to run: all, build (IPA + FlatlyCore tests) or screenshots"
+        type: choice
+        options: [all, build, screenshots]
+        default: all
+
+concurrency:
+  group: ios-build-${{ github.ref }}-${{ inputs.jobs || github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build unsigned IPA
+    if: github.event_name != 'workflow_dispatch' || inputs.jobs == 'all' || inputs.jobs == 'build'
+    runs-on: macos-26
+    timeout-minutes: 45
+    env:
+      BUNDLE_ID_PREFIX: com.bartoszpiech.flatly
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode 26
+        run: |
+          ls /Applications | grep -i xcode
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then XCODE=/Applications/Xcode.app; fi
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: scripts/generate-project.sh
+
+      - name: Build for iOS device (unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project Flatly.xcodeproj \
+            -scheme FlatlyApp \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" \
+            build | tee build.log | grep -E "error|warning: |BUILD|Compiling|Linking" || true
+          grep -q "BUILD SUCCEEDED" build.log
+
+      - name: Package IPA
+        run: |
+          APP=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -name '*.app' | head -1)
+          test -d "$APP"
+          rm -rf Payload && mkdir Payload
+          cp -R "$APP" Payload/
+          zip -qr Offscan-unsigned.ipa Payload
+          ls -la Offscan-unsigned.ipa
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: Offscan-unsigned-ipa
+          path: Offscan-unsigned.ipa
+          retention-days: 30
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
+
+  test:
+    name: FlatlyCore tests
+    if: github.event_name != 'workflow_dispatch' || inputs.jobs == 'all' || inputs.jobs == 'build'
+    runs-on: macos-26
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then XCODE=/Applications/Xcode.app; fi
+          sudo xcode-select -s "$XCODE"
+          swift --version
+      - name: Build tests
+        run: cd FlatlyCore && swift build --build-tests 2>&1 | tail -5
+      # `script` gives the test runner a pseudo-terminal so Swift Testing's progress streams into the
+      # log line by line instead of being block-buffered until exit (useful when a test hangs).
+      - name: Run core tests
+        timeout-minutes: 25
+        env:
+          # PKDrawing rasterisation hangs on the headless runner; the signature tests are skipped here
+          # and run locally instead (see Tests/FlatlyCoreTests/PencilKitAvailability.swift).
+          FLATLY_SKIP_PENCILKIT: "1"
+        run: script -q /dev/null scripts/test-core.sh --skip-build --no-parallel
+
+  screenshots:
+    name: UI screenshots
+    if: github.event_name == 'workflow_dispatch' && (inputs.jobs == 'all' || inputs.jobs == 'screenshots')
+    runs-on: macos-26
+    timeout-minutes: 50
+    env:
+      BUNDLE_ID_PREFIX: com.bartoszpiech.flatly
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then XCODE=/Applications/Xcode.app; fi
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: scripts/generate-project.sh
+
+      - name: Build for testing (iPhone simulator)
+        id: build
+        timeout-minutes: 8
+        run: scripts/ui-screenshots.sh build
+
+      - name: Capture screenshots (en light, en dark, pl light)
+        timeout-minutes: 30
+        run: scripts/ui-screenshots.sh shoot
+
+      - name: Smoke tests
+        if: always() && steps.build.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 3
+        run: scripts/ui-screenshots.sh smoke
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Offscan-screenshots
+          path: |
+            build/screenshots/png/
+            build/screenshots/failures/
+          retention-days: 14
+          if-no-files-found: warn
+
+      - name: Upload test logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot-logs
+          path: build/screenshots/logs/
+          retention-days: 7
