@@ -9,11 +9,14 @@
 #   gh workflow run ios-build.yml --ref <branch> -f jobs=screenshots
 name: iOS build
 
+# Changes that touch only documentation do not start a build.
 on:
   push:
     branches: [main]
+    paths-ignore: ["**/*.md", "docs/**", "LICENSE"]
   pull_request:
     branches: [main]
+    paths-ignore: ["**/*.md", "docs/**", "LICENSE"]
   workflow_dispatch:
     inputs:
       jobs:
